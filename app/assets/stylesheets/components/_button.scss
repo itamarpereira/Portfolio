@@ -1,4 +1,5 @@
 .btn-grad {
+  color: #d8e3e9;
   transition: 0.5s;
   background-size: 200% auto;
   margin: 8px;
@@ -6,13 +7,6 @@
 }
 
 .btn-grad:hover {
-  background-position: right center;
-}
-
-.btn-grad a {
   color: #d8e3e9;
-}
-
-.btn-grad a:hover {
-  text-decoration: none;
+  background-position: right center;
 }
