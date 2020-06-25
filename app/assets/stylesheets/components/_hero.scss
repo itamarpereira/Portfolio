@@ -98,12 +98,19 @@
 }
 
 .page-wrapper {
+  width: 320px;
   position: relative;
   text-align: left;
   margin-top: 184px;
   margin-left: 40px;
   color: #fff;
   z-index: 4;
+}
+
+@media (max-width: 370px){
+  .page-wrapper {
+    width: 224px;
+  }
 }
 
 .page-wrapper h2 {
