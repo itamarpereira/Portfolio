@@ -29,7 +29,14 @@
 }
 
 .card-big img {
+  width: 300px;
   border-radius: 8px;
+}
+
+@media(max-width: 850px) {
+  .card-big img {
+    width: 200px;
+  }
 }
 
 .container {
