@@ -35,10 +35,9 @@
 
 .background-container{
 	height: 70vh;
-    position: fixed;
-    top: 67px;
-    left: 0;
-    right: 0;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
 .stars {
@@ -99,7 +98,7 @@
 
 .page-wrapper {
   width: 320px;
-  position: relative;
+  position: absolute;
   text-align: left;
   margin-top: 184px;
   margin-left: 40px;
