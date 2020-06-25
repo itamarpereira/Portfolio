@@ -1,0 +1,21 @@
+.card-big {
+  background-color: white;
+  margin: 10px auto;
+  padding: 25px;
+  border: 1px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-big h1 {
+  color: #007892;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.container {
+  width: 600px;
+  text-align: center;
+  margin: 40px auto;
+}
