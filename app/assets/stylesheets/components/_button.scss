@@ -1,0 +1,18 @@
+.btn-grad {
+  transition: 0.5s;
+  background-size: 200% auto;
+  margin: 8px;
+  background-image: linear-gradient(to right, #3a5c51 0%, #81c58e 51%, #3a5c51 100%)
+}
+
+.btn-grad:hover {
+  background-position: right center;
+}
+
+.btn-grad a {
+  color: #d8e3e9;
+}
+
+.btn-grad a:hover {
+  text-decoration: none;
+}
