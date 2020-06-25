@@ -1,7 +1,7 @@
 .card-big {
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 10px auto;
   padding: 25px;
@@ -17,6 +17,17 @@
   line-height: 40px;
 }
 
+.card-big h2 {
+  font-size: 24px;
+  color: #ffe35a;
+}
+
+.card-big p {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #ffe35a;
+}
+
 .card-big img {
   border-radius: 8px;
 }
@@ -24,4 +35,109 @@
 .container {
   text-align: center;
   margin: 40px auto;
+}
+
+.card-projects {
+  position: relative;
+  z-index: 4;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px auto;
+  padding: 25px;
+  border: 1px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-projects h1 {
+  color: #007892;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.cards {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cards a:hover {
+  text-decoration: none;
+}
+
+.card {
+  margin: auto;
+  background-size: cover;
+  height: 60vh;
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.card p {  
+  font-size: 18px;
+  opacity: 0;
+  margin-top: 16px;
+  color: white;
+  background-color: rgba(8, 8, 8, 0.6);
+  border-radius: 8px;
+}
+
+@media(max-width: 992px) {
+  .card-big p {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 768px) {
+  .card-big p {
+    font-size: 14px;
+  }
+}
+
+.card p:hover {
+  opacity: 1;
+}
+
+.card h4 {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.card-bottom {
+  position: relative;
+  z-index: 4;
+  min-height: 30vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px auto;
+  padding: 25px;
+  border: 1px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-bottom h1 {
+  color: #007892;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
 }
