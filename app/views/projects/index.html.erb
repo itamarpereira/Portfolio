@@ -21,9 +21,9 @@
 
 <div class="cards">
   <% @projects.each do |project| %>
-    <a href="<%= course.url %>"><div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1554290712-e640351074bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=665&q=80')">
-      <h4><%= course.name %></h4>
-      <p><%= course.description %></p>
+    <a href="<%= project.url %>"><div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= project_image_url(project) %>')">
+      <h4><%= project.name %></h4>
+      <p><%= project.description %></p>
     </div></a>
   <% end %>    
 </div>
