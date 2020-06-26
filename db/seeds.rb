@@ -17,14 +17,14 @@ puts"seeds destroyed. Creating new seeds..."
 algolearning_photo = "https://images.unsplash.com/photo-1580894906475-403276d3942d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
 file = URI.open(algolearning_photo)
 filename = File.basename(URI.parse(algolearning_photo).path)
-algolearning_project = Project.new(name: "AlgoLearning", description: 'Para projeto de conclusão de curso, novamente em grupo, criamos um MVP para ensinar os principais algoritmos utilizados em entrevista de emprego para programadores', url: "https://www.algolearning.club/")
+algolearning_project = Project.new(name: "AlgoLearning", description: 'Um MVP(Minimum Viable Product) para ensinar os principais algoritmos utilizados em entrevistas de emprego para programadores.', url: "https://www.algolearning.club/")
 algolearning_project.photo.attach(io: file, filename: filename)
 algolearning_project.save
 
 fourlegsangels_photo = "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(fourlegsangels_photo)
 filename = File.basename(URI.parse(fourlegsangels_photo).path)
-fourlegsangels_project = Project.new(name: "4LegsAngels", description: 'Esse foi o primeiro projeto em grupo, tinhamos que criar um marketplace e resolvemos desenvolver uma ferramenta para para facilitar a adoção de animais de estimação ', url: "https://fourlegsangels-vkaraujo.herokuapp.com/")
+fourlegsangels_project = Project.new(name: "4LegsAngels", description: 'Este marketplace é uma ferramenta para para facilitar a adoção de animais de estimação.', url: "https://fourlegsangels-vkaraujo.herokuapp.com/")
 fourlegsangels_project.photo.attach(io: file, filename: filename)
 fourlegsangels_project.save
 
