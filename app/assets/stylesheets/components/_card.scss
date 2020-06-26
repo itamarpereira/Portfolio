@@ -11,7 +11,7 @@
 }
 
 .card-big h1 {
-  color: #007892;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   line-height: 40px;
@@ -23,8 +23,9 @@
 }
 
 .card-big p {
+  text-align: justify;
   font-size: 16px;
-  margin-top: 8px;
+  margin: 8px 96px;
   color: #ffe35a;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .card-projects h1 {
-  color: #007892;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   line-height: 40px;
@@ -108,15 +109,13 @@
   border-radius: 8px;
 }
 
-@media(max-width: 768px) {
-  .card p {
-    opacity: 1;
-  }
-}
-
 @media(max-width: 992px) {
   .card-big p {
     font-size: 16px;
+  }
+
+  .card p {
+    opacity: 1;
   }
 }
 
@@ -126,7 +125,7 @@
   }
 }
 
-.card p:hover {
+.card:hover p {
   opacity: 1;
 }
 
@@ -149,7 +148,7 @@
 }
 
 .card-bottom h1 {
-  color: #007892;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   line-height: 40px;
