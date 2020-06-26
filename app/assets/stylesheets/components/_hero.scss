@@ -45,7 +45,7 @@
 .stars {
  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
  position: fixed;
- height: 100vh;
+ height: 110vh;
 	top: 0px;
 	left: 0;
 	right: 0;
@@ -55,7 +55,7 @@
 
 .twinkling{
 	width:10000px;
-	height: 100vh;
+	height: 110vh;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
 	background-size: 1000px 1000px;
     position: fixed;
@@ -73,7 +73,7 @@
 
 .clouds{
 	width:10000px;
-	height: 100vh;
+	height: 110vh;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
 	background-size: 1000px 1000px;
     position: fixed;
@@ -81,17 +81,17 @@
     top: 0px;
     z-index: 3;
 
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
+   -moz-animation:move-background 130s linear infinite;
+  -ms-animation:move-background 130s linear infinite;
+  -o-animation:move-background 130s linear infinite;
+  -webkit-animation:move-background 130s linear infinite;
+  animation:move-background 130s linear infinite;
 }
 
 #moon {
-  height: 50vh;
-  width:50vh;
-  position: absolute;
+  height: 25vh;
+  width:25vh;
+  position: fixed;
   z-index: 3;
   right: 20px;
 }
@@ -114,7 +114,7 @@
 
 .page-wrapper h2, h1 {
   color: #fff;
-  font-family: Monoton;
+  font-family: 'Open Sans', sans-serif;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
