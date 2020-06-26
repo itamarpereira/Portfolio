@@ -18,15 +18,16 @@
 }
 
 .card-big h2 {
+  margin: 16px 0;
   font-size: 24px;
-  color: #ffe35a;
+  color: #fff;
 }
 
 .card-big p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 24px;
   margin: 8px 96px;
-  color: #ffe35a;
+  color: #fff;
 }
 
 .card-big img {
@@ -111,7 +112,7 @@
 
 @media(max-width: 992px) {
   .card-big p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .card p {
@@ -121,7 +122,14 @@
 
 @media(max-width: 768px) {
   .card-big p {
-    font-size: 14px;
+    margin: 8px 24px;
+  }
+}
+
+@media(max-width: 530px) {
+  .card-big p {
+    font-size: 16px;
+    margin: 8px 16px;
   }
 }
 
