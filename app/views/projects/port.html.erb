@@ -1,0 +1,60 @@
+<div class="background-container">
+  <img id="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+  <div class="page-wrapper">
+    <h1>Itamar Pereira</h1>
+    <h2>Fullstack developer</h2>
+  </div>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+</div>
+
+<div class="container">
+  <div class="card-big">
+    <h1>Quem sou eu?</h1>
+<!--    <img src="<%#= cl_image_path("https://res.cloudinary.com/dn2gpbtwl/image/upload/v1592485199/3yqpsxc9iaa53zbmx4jvt0mhactm.jpg") %>" alt="Profile Picture"> -->
+    <h2>Fullstack Programmer & Civil Engineer</h2>
+    <p>Me formei em engenharia civil em 2015, e assim que saí da faculdade abri minha própria empresa.
+    <br>Alguns anos depois, sentindo a necessidade de ampliar meus horizontes, me mudei para o Canadá, onde fiz uma imersão na língua inglesa e diversifiquei minha atuação profissional.
+    <br>Assim me surgiu a Le Wagon, que junto com a minha paixão por tecnologia, me capacitou e possibilitou seguir pela área da programação.</p>
+    <a href="https://www.linkedin.com/in/itamar-gon%C3%A7alves-pereira-451aa3115/" class="btn btn-grad" target="_blank"> LinkedIn</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card-projects">
+    <h1>Projetos</h1>
+    <div class="cards">
+      <% @projects.each do |project| %>
+        <a href="<%= project.url %>" target="_blank"><div class="card" style="background-image: url('<%= project_image_url(project) %>')">
+          <h4><%= project.name %></h4>
+          <p><%= project.port_description %></p>
+        </div></a>
+      <% end %>    
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card-bottom">
+    <h1>Entre em contato</h1>
+    <ul class="list-inline">
+      <li class="social-icon">
+        <a href="https://github.com/itamarlewagon/profile" target="_blank">
+        <i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-icon">  
+        <a href="https://www.facebook.com/itamar.tororopereira/" target="_blank">
+        <i class="fab fa-facebook-square"></i></a>
+      </li>
+      <li class="social-icon">
+        <a href="https://www.instagram.com/i_toros/" target="_blank">
+        <i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="social-icon">  
+        <a href="https://api.whatsapp.com/send?phone=16473255884&amp;text=Olá, Itamar" target="_blank">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
