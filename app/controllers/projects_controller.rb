@@ -3,6 +3,10 @@ class ProjectsController < ApplicationController
     @projects = Project.all
   end
 
+  def port
+    @projects = Project.all
+  end
+
   private
 
   def set_project
