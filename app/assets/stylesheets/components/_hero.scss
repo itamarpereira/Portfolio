@@ -42,7 +42,7 @@
   right: 0;
 }
 
-.stars {
+.stars.active {
  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
  position: fixed;
  height: 110vh;
@@ -53,7 +53,18 @@
   	z-index: 0;
 }
 
-.twinkling{
+.stars {
+  background: url(https://res.cloudinary.com/dn2gpbtwl/image/upload/v1593550251/photo-1563630381190-77c336ea545a_ga32u5.jpg) repeat;
+  position: fixed;
+  height: 110vh;
+   top: 0px;
+   left: 0;
+   right: 0;
+   display: block;
+     z-index: 0;
+ }
+
+.twinkling.active{
 	width:10000px;
 	height: 110vh;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
@@ -71,7 +82,7 @@
 	
 }
 
-.clouds{
+.clouds.active{
 	width:10000px;
 	height: 110vh;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
@@ -88,7 +99,7 @@
   animation:move-background 130s linear infinite;
 }
 
-#moon {
+.moon.active {
   height: 25vh;
   width:25vh;
   position: fixed;
