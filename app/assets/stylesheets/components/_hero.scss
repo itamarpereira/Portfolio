@@ -97,11 +97,11 @@
 }
 
 .page-wrapper {
-  width: 320px;
+  right: 0;
+  width: 100%;
   position: absolute;
-  text-align: left;
+  text-align: center;
   margin-top: 184px;
-  margin-left: 40px;
   color: #fff;
   z-index: 4;
 }
@@ -115,13 +115,6 @@
 .page-wrapper h2, h1 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-.page-wrapper h2:hover {
-  color: #00beee;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
