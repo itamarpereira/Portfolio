@@ -1,3 +1,39 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div>
+    <%= link_to "#", class: "navbar-brand" do %>
+      <i class="fa fa-sun"></i>
+    <% end %>
+    <%= link_to "#", class: "navbar-brand" do %>
+      <i class="fa fa-moon"></i>
+    <% end %>
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Sobre mim", "#about", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Projetos", "#projects", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contato", "#contact", class: "nav-link" %>
+      </li>
+
+      <li class="nav-item dropdown">
+        <%= link_to "<img class='flag' src='/assets/brazil-flag.png'>Português".html_safe, "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "<img class='flag' src='/assets/uk-flag.png'>Inglês".html_safe, projects_path, class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="background-container">
   <img id="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
   <div class="page-wrapper">
@@ -10,7 +46,8 @@
 </div>
 
 <div class="container">
-  <div class="card-big">
+  <div id="about" class="card-big">
+    <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
     <h1>Quem sou eu?</h1>
 <!--    <img src="<%#= cl_image_path("https://res.cloudinary.com/dn2gpbtwl/image/upload/v1592485199/3yqpsxc9iaa53zbmx4jvt0mhactm.jpg") %>" alt="Profile Picture"> -->
     <h2>Fullstack Programmer & Civil Engineer</h2>
@@ -22,7 +59,8 @@
 </div>
 
 <div class="container">
-  <div class="card-projects">
+  <div id="projects" class="card-projects">
+    <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
     <h1>Projetos</h1>
     <div class="cards">
       <% @projects.each do |project| %>
@@ -36,8 +74,12 @@
 </div>
 
 <div class="container">
-  <div class="card-bottom">
-    <h1>Entre em contato</h1>
+  <div id="contact" class="card-bottom">
+    <div class="card-bottom-header">
+      <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+      <h1>Entre em contato</h1>
+    </div>
+
     <ul class="list-inline">
       <li class="social-icon">
         <a href="https://github.com/itamarlewagon/profile" target="_blank">
