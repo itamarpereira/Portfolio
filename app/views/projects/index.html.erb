@@ -27,12 +27,13 @@
       <li class="nav-item dropdown">
         <%= link_to "<img class='flag' src='/assets/uk-flag.png'>English".html_safe, "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "<img class='flag' src='/assets/brazil-flag.png'>Portuguese".html_safe, "#", class: "dropdown-item" %>
+          <%= link_to "<img class='flag' src='/assets/brazil-flag.png'>Portuguese".html_safe, port_path, class: "dropdown-item" %>
         </div>
       </li>
     </ul>
   </div>
 </div>
+
 <div class="background-container">
   <img id="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
   <div class="page-wrapper">
