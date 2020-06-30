@@ -10,6 +10,13 @@
   border-radius: 5px;
 }
 
+.card-big i {
+  position: absolute;
+  right: 8px;
+  font-size: x-large;
+  color: #16c3ea;
+}
+
 .card-big h1 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +63,13 @@
   border: 1px;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
+}
+
+.card-projects i {
+  position: absolute;
+  right: 8px;
+  font-size: x-large;
+  color: #16c3ea;
 }
 
 .card-projects h1 {
@@ -155,7 +169,14 @@
   border-radius: 5px;
 }
 
-.card-bottom h1 {
+.card-bottom-header i {
+  position: absolute;
+  right: 8px;
+  font-size: x-large;
+  color: #16c3ea;
+}
+
+.card-bottom-header h1 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
