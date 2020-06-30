@@ -25,9 +25,15 @@
       </li>
 
       <li class="nav-item dropdown">
-        <%= link_to "<img class='flag' src='/assets/brazil-flag.png'>Português".html_safe, "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <%= link_to "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false do %>
+          <img class='flag' src=<%= cl_image_path("brazil-flag-wave-icon-64_cjdkti") %>>
+          <span>Português</span>
+        <% end %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "<img class='flag' src='/assets/uk-flag.png'>Inglês".html_safe, projects_path, class: "dropdown-item" %>
+          <%= link_to projects_path, class: "dropdown-item" do %>
+            <img class='flag' src=<%= cl_image_path("united-kingdom-flag-wave-icon-64_igvkp8.png") %>>
+            <span>Inglês</span>
+          <% end %>
         </div>
       </li>
     </ul>
