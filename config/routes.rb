@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'projects#index'
-  resources :projects, only: [:index, :port]
+  resources :projects, only: [:index]
+  get '/port', to: 'projects#port'
 end
