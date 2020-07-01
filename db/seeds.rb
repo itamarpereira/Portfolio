@@ -24,7 +24,7 @@ algolearning_project.save
 fourlegsangels_photo = "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(fourlegsangels_photo)
 filename = File.basename(URI.parse(fourlegsangels_photo).path)
-fourlegsangels_project = Project.new(name: "4LegsAngels", description: 'This marketplace app helps rescued animals to be adopted.', port_description: 'Este marketplace é uma ferramenta para para facilitar que animais resgatados sejam adotados.', url: "https://fourlegsangels-vkaraujo.herokuapp.com/")
+fourlegsangels_project = Project.new(name: "4LegsAngels", description: 'This marketplace app helps rescued animals to be adopted.', port_description: 'Este marketplace é uma ferramenta para facilitar que animais resgatados sejam adotados.', url: "https://fourlegsangels-vkaraujo.herokuapp.com/")
 fourlegsangels_project.photo.attach(io: file, filename: filename)
 fourlegsangels_project.save
 
