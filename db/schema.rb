@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_02_084811) do
+ActiveRecord::Schema.define(version: 2020_07_01_194316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,15 +45,6 @@ ActiveRecord::Schema.define(version: 2020_07_02_084811) do
     t.string "port_description"
   end
 
-  create_table "selections", force: :cascade do |t|
-    t.bigint "project_id", null: false
-    t.bigint "visualization_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["project_id"], name: "index_selections_on_project_id"
-    t.index ["visualization_id"], name: "index_selections_on_visualization_id"
-  end
-
   create_table "visualizations", force: :cascade do |t|
     t.string "language"
     t.string "theme"
@@ -62,6 +53,4 @@ ActiveRecord::Schema.define(version: 2020_07_02_084811) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "selections", "projects"
-  add_foreign_key "selections", "visualizations"
 end
