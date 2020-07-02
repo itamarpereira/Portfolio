@@ -12,8 +12,6 @@ OpenURI::Buffer.const_set 'StringMax', 0
 
 puts"destroying the seeds..."
 Selection.destroy_all
-Project.destroy_all
-Visualization.destroy_all
 puts"seeds destroyed. Creating new seeds..."
 
 #SELECTIONS
