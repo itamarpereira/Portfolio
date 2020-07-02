@@ -12,3 +12,33 @@
   color: #d8e3e9;
   background-position: right center;
 }
+
+.btn-dark {
+  color: #d8e3e9;
+  transition: 0.5s;
+  background-size: 200% auto;
+  margin: 8px;
+  background-image: linear-gradient(to right, #01010f 0%, #8c9496 51%, #01010f 100%);
+  border-radius: 4px;
+  padding: 6px 24px;
+}
+
+.btn-dark:hover {
+  color: #d8e3e9;
+  background-position: right center;
+}
+
+.btn-sun {
+  color: #d8e3e9;
+  transition: 0.5s;
+  background-size: 200% auto;
+  margin: 8px;
+  background-image: linear-gradient(to right, #7c8204 0%, #dee83a 51%, #7c8204 100%);
+  border-radius: 4px;
+  padding: 6px 24px;
+}
+
+.btn-sun:hover {
+  color: #d8e3e9;
+  background-position: right center;
+}
