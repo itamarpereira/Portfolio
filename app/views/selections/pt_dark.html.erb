@@ -1,0 +1,96 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div>
+    <%= link_to pt_light_path, class: "btn btn-sun" do %>
+      <i class="fa fa-sun"> Modo Claro</i>
+    <% end %>
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Sobre mim", "#about", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Projetos", "#projects", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contato", "#contact", class: "nav-link" %>
+      </li>
+
+      <li class="nav-item dropdown">
+        <%= link_to "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false do %>
+          <img class='flag' src=<%= cl_image_path("brazil-flag-wave-icon-64_cjdkti") %>>
+          <span>Português</span>
+        <% end %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to en_dark_path, class: "dropdown-item" do %>
+            <img class='flag' src=<%= cl_image_path("united-kingdom-flag-wave-icon-64_igvkp8.png") %>>
+            <span>Inglês</span>
+          <% end %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<%= render 'dark' %>
+
+<div class="container">
+  <div id="about" class="card-big">
+    <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+    <h1>Quem sou eu?</h1>
+<!--    <img src="<%#= cl_image_path("https://res.cloudinary.com/dn2gpbtwl/image/upload/v1592485199/3yqpsxc9iaa53zbmx4jvt0mhactm.jpg") %>" alt="Profile Picture"> -->
+    <h2>Fullstack Programmer & Civil Engineer</h2>
+    <p>Me formei em engenharia civil em 2015, e assim que saí da faculdade abri minha própria empresa.
+    <br>Alguns anos depois, sentindo a necessidade de ampliar meus horizontes, me mudei para o Canadá, onde fiz uma imersão na língua inglesa e diversifiquei minha atuação profissional.
+    <br>Assim me surgiu a Le Wagon, que junto com a minha paixão por tecnologia, me capacitou e possibilitou seguir pela área da programação.</p>
+    <a href="https://www.linkedin.com/in/itamar-gon%C3%A7alves-pereira-451aa3115/" class="btn btn-grad" target="_blank"> LinkedIn</a>
+  </div>
+</div>
+
+<div class="container">
+  <div id="projects" class="card-projects">
+    <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+    <h1>Projetos</h1>
+    <div class="cards">
+      <% @projects.each do |project| %>
+        <a href="<%= project.url %>" target="_blank"><div class="card" style="background-image: url('<%= project_image_url(project) %>')">
+          <h4><%= project.name %></h4>
+          <p><%= project.port_description %></p>
+        </div></a>
+      <% end %>    
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="contact" class="card-bottom">
+    <div class="card-bottom-header">
+      <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+      <h1>Entre em contato</h1>
+    </div>
+
+    <ul class="list-inline">
+      <li class="social-icon">
+        <a href="https://github.com/itamarlewagon/profile" target="_blank">
+        <i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-icon">  
+        <a href="https://www.facebook.com/itamar.tororopereira/" target="_blank">
+        <i class="fab fa-facebook-square"></i></a>
+      </li>
+      <li class="social-icon">
+        <a href="https://www.instagram.com/i_toros/" target="_blank">
+        <i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="social-icon">  
+        <a href="https://api.whatsapp.com/send?phone=16473255884&amp;text=Olá, Itamar" target="_blank">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
