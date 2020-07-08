@@ -119,16 +119,16 @@
   width: 100%;
   position: absolute;
   text-align: center;
-  margin-top: 184px;
+  margin-top: 100px;
   color: #fff;
   z-index: 4;
 }
 
-@media (max-width: 370px){
-  .page-wrapper {
-    width: 224px;
-  }
-}
+// @media (max-width: 370px){
+//   .page-wrapper {
+//     width: 224px;
+//   }
+// }
 
 .page-wrapper h2, h1 {
   color: #fff;
